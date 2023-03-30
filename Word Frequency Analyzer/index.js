@@ -11,7 +11,7 @@ function analyzeText(text) {
   // Convert the word frequency object to an array of {word, frequency} objects
   const wordFrequencyArray = Object.entries(wordFrequency).map(([word, frequency]) => ({ word, frequency }));
   
-  // Sort the array by frequency in descending order
+  // Sort the array 
   wordFrequencyArray.sort((a, b) => b.frequency - a.frequency);
   
   return wordFrequencyArray;
